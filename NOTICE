@@ -1,0 +1,9 @@
+dsh-mic-asr
+Copyright 2026 jiangbojin
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The binary runtime that the plugin downloads on first use (published as
+dsh-mic-asr-runtime-*.tar.gz on the GitHub Releases page) contains closed-source
+speech libraries and model files. They are provided in binary form only and are
+not covered by the Apache License of this repository.

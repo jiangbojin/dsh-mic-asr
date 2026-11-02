@@ -1,0 +1,8 @@
+packages:
+  - packages/*
+# Flat node_modules: the protocol declarations copied into packages/.typert/ resolve their imports from the root.
+nodeLinker: hoisted
+allowBuilds:
+  '@deepseek-ai/dsh-subprocess-local': true
+  koffi: true
+  node-pty: true

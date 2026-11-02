@@ -1,0 +1,10 @@
+node_modules/
+lib/
+dist/
+native/build/
+packages/dsh-mic-asr/LICENSE
+packages/dsh-mic-asr/NOTICE
+packages/dsh-mic-asr/README.md
+packages/dsh-mic-asr/README.en.md
+*.tgz
+packages/.typert/

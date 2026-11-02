@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "dsh-mic-asr microphone dictation",
+    "description": "Local streaming speech recognition with VAD and voiceprint filtering; finished sentences go into the composer."
+  }
+}

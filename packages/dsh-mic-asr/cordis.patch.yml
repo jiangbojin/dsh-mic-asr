@@ -1,0 +1,4 @@
+# dsh-mic-asr: one row; the browser part loads from the package's `dsh.client` entry.
+- insert:
+    - id: mic-asr
+      name: dsh-mic-asr

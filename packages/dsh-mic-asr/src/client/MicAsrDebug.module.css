@@ -1,0 +1,156 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.root h4 {
+  margin: 0 0 8px;
+  font-size: 13px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.select {
+  min-width: 240px;
+  max-width: 100%;
+}
+
+.hint {
+  margin: 0;
+  color: var(--dsw-alias-label-secondary);
+}
+
+.error {
+  margin: 0;
+  color: var(--dsw-alias-state-error-primary);
+}
+
+.meter {
+  display: grid;
+  grid-template-columns: 140px minmax(120px, 360px) 90px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.bar {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--dsw-alias-bg-layer-2);
+  overflow: hidden;
+}
+
+.bar i {
+  display: block;
+  height: 100%;
+  background: var(--dsw-alias-state-business-primary);
+  transition: width 100ms linear;
+}
+
+.status {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 6px 16px;
+  margin: 8px 0 0;
+}
+
+.status dt {
+  color: var(--dsw-alias-label-secondary);
+}
+
+.status dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.finals {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 220px;
+  margin: 8px 0 0;
+  padding-left: 20px;
+  overflow-y: auto;
+}
+
+.finals small {
+  margin-left: 8px;
+  color: var(--dsw-alias-label-tertiary);
+}
+
+.finals li[data-reason='not-verified'] {
+  color: var(--dsw-alias-label-secondary);
+}
+
+.samples {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.samples li[data-state='done'] {
+  color: var(--dsw-alias-label-secondary);
+  text-decoration: line-through;
+}
+
+.samples li[data-state='current'] {
+  font-weight: 600;
+}
+
+.recording {
+  margin: 0;
+  font-weight: 600;
+  color: var(--dsw-alias-state-error-primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 8px 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 0.5px solid var(--dsw-alias-border-l1);
+}
+
+.fieldHead,
+.control {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.control input[type='range'] {
+  flex: 1;
+}
+
+.control input[type='number'],
+.control select {
+  width: 96px;
+}
+
+.help {
+  font-size: 12px;
+  color: var(--dsw-alias-label-secondary);
+}

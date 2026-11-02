@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "dsh-mic-asr 麦克风听写",
+    "description": "本机流式语音识别，带 VAD 和声纹过滤，说完的句子插入输入框。"
+  }
+}

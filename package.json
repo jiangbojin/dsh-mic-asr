@@ -1,0 +1,13 @@
+{
+  "name": "dsh-mic-asr-workspace",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "pnpm --filter dsh-mic-asr run build",
+    "typecheck": "pnpm --filter dsh-mic-asr run typecheck",
+    "test": "pnpm --filter dsh-mic-asr run test",
+    "build:native": "cmake -S native -B native/build -DCMAKE_BUILD_TYPE=Release && cmake --build native/build"
+  },
+  "packageManager": "pnpm@11.28.5"
+}

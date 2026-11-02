@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": [
+      "ES2024",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "types": [
+      "node",
+      "react"
+    ],
+    "strict": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+    "experimentalDecorators": false,
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "rootDir": "src",
+    "outDir": "lib/types",
+    "declaration": true,
+    "composite": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@deepseek-ai/dsh-typert-protocol": [
+        "../.typert/dsh-typert-protocol/decl/index.d.ts"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ]
+}

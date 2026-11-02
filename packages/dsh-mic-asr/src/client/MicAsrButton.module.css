@@ -1,0 +1,44 @@
+.anchor {
+  position: relative;
+  display: inline-flex;
+  flex: none;
+}
+
+.trigger {
+  width: 28px;
+  padding: 0;
+  flex: none;
+}
+
+.chooser {
+  width: 16px;
+  padding: 0;
+  flex: none;
+}
+
+.trigger[data-active='true'] {
+  color: var(--dsw-alias-state-error-primary);
+}
+
+.trigger[data-speaking='true'] {
+  box-shadow: 0 0 0 2px var(--dsw-alias-state-business-primary);
+}
+
+.bubble {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 8px);
+  z-index: 20;
+  max-width: 360px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--dsw-alias-label-secondary);
+  background: var(--dsw-alias-bg-layer-1);
+  box-shadow: var(--dsw-elevation-panel);
+  pointer-events: none;
+}

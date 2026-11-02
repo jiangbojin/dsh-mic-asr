@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": [
+      "ES2024",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "types": [
+      "node",
+      "react"
+    ],
+    "strict": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+    "experimentalDecorators": false,
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "paths": {
+      "@deepseek-ai/dsh-typert-protocol": [
+        "./packages/.typert/dsh-typert-protocol/decl/index.d.ts"
+      ]
+    }
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/dsh-mic-asr"
+    },
+    {
+      "path": "./packages/.typert/dsh-typert-protocol"
+    }
+  ]
+}
