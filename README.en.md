@@ -2,10 +2,11 @@
 
 [中文](README.md) | English
 
-A microphone dictation plugin for the [DeepSeek Harness](https://www.npmjs.com/package/@deepseek-ai/dsh) (dsh) Web app: local streaming speech recognition (ASR) with voice activity detection (VAD) and voiceprint filtering inserts each finished sentence into the composer. Audio never leaves your machine.
+A microphone dictation plugin for the [DeepSeek Harness](https://www.npmjs.com/package/@deepseek-ai/dsh) (dsh) Web app: local noise suppression and streaming speech recognition (ASR) with voice activity detection (VAD) and voiceprint filtering inserts each finished sentence into the composer. Audio never leaves your machine.
 
 - **Composer microphone**: a button in the composer toolbar, right after the prompt-enhance button. Click to start dictating, click again to stop; the ▾ next to it chooses the microphone.
 - **See what is heard**: a bubble above the button shows the text being heard; a finished sentence (after a pause) is inserted at the caret as one undo step.
+- **Noise suppression**: background noise such as fans and typing is suppressed before recognition, so it is less likely to turn into text. It can be turned off.
 - **Voiceprint filtering**: only sentences that pass speaker verification are inserted, so other people and video sound stay out of the composer. It can be turned off.
 - **Live line in the status row**: while dictating, the status row under the composer shows the last few seconds of input level (detected speech shaded) and the sentence's speaker score against the filter line.
 - **Tuning on the Plugins page**: open a dictation stream on the plugin page to watch levels, voice activity, recognized text, speaker scores and per-sentence latency, enroll your voiceprint, and adjust parameters live.

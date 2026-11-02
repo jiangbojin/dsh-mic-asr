@@ -1,7 +1,7 @@
 {
   "name": "dsh-mic-asr",
   "version": "0.1.0",
-  "description": "Microphone dictation for DeepSeek Harness: local streaming speech recognition with VAD and voiceprint filtering, inserted into the composer.",
+  "description": "Microphone dictation for DeepSeek Harness: local noise suppression and streaming speech recognition with VAD and voiceprint filtering, inserted into the composer.",
   "keywords": [
     "dsh",
     "deepseek-harness",
@@ -9,6 +9,8 @@
     "speech-recognition",
     "dictation",
     "asr",
+    "noise-suppression",
+    "denoise",
     "vad",
     "voiceprint"
   ],
